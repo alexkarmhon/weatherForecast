@@ -2,15 +2,22 @@
   "name": "my-parcel-template-project",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://alexkarmhon.github.io/weatherForecast",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "server": "json-server db.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /weatherForecast/",
+    "server": "json-server db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexkarmhon/weatherForecast.git"
   },
   "author": "Olexii <89stigmat89@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexkarmhon/weatherForecast/issues"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "json-server": "^1.0.0-alpha.16",
