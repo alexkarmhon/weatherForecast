@@ -1,0 +1,19 @@
+{
+  "name": "my-parcel-template-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "server": "json-server db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olexii <89stigmat89@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "json-server": "^1.0.0-alpha.16",
+    "parcel-bundler": "^1.12.5"
+  }
+}
