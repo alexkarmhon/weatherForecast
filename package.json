@@ -21,5 +21,8 @@
     "@parcel/transformer-sass": "^2.11.0",
     "json-server": "^1.0.0-alpha.16",
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
   }
 }

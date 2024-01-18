@@ -4,7 +4,7 @@ const list = document.querySelector('.js-list');
 const formInputsContainer = document.querySelector('.js-form-container');
 
 function handlerAddBtn() {
-  const markup = '<input type="text" name="country">';
+  const markup = '<input class="form-input" type="text" name="country">';
   formInputsContainer.insertAdjacentHTML('beforeend', markup);
 }
 
@@ -23,17 +23,17 @@ function handlerFormSubmit(e) {
     .catch(console.log)
     .finally(() => {
       searcForm.reset();
-      formInputsContainer.innerHTML = '<input type="text" name="country">';
+      formInputsContainer.innerHTML = '<input class="form-input" type="text" name="country">';
     });
 }
 
 function createMarkup(arr) {
   return arr.map(({ current:{condition:{text, icon}, temp_c} , location:{name, country} }) => `
-  <li>
+  <li class="weather-forecast__item">
   <div>
     <h2>${name}</h2>
     <h3>${country}</h3>
-    <img src="${icon}" alt="${text}">
+    <img class="weather-icon" src="${icon}" alt="${text}">
     <p>${text}</p>
     <p>${temp_c}C</p>
   </div>

@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".././node_modules/modern-normalize/modern-normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.min.css">
   <title>Template</title>
 </head>
 <body>
+  <div class="base-container">
+    <form action="submit" class="js-search search-form">
+      <div class="js-form-container">
+        <input class="form-input" type="text" name="country">
+      </div>
+      <button type="button" class="js-add">Add country</button>
+      <button>Find</button>
+    </form>
   
-  <form action="submit" class="js-search">
-    <div class="js-form-container">
-      <input type="text" name="country">
-    </div>
-    <button>Find</button>
-  </form>
-
-  <button class="js-add">Add country</button>
-
-  <ul class="js-list">
-  </ul>
+  
+    <ul class="js-list weather-forecast"></ul>
+  </div>
 
   <script src="./index.js"></script>
 </body>
